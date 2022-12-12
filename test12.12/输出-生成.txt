@@ -1,0 +1,19 @@
+﻿1>------ 已启动生成:  项目: test12.12, 配置: Debug Win32 ------
+1>生成启动时间为 2022/12/12 11:54:16。
+1>PrepareForBuild:
+1>  正在创建目录“D:\vs2013\代码\函数\test12.12\Debug\”。
+1>  正在创建目录“Debug\test12.12.tlog\”。
+1>InitializeBuildStatus:
+1>  正在创建“Debug\test12.12.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+1>ClCompile:
+1>  test12.12.c
+1>Link:
+1>  test12.12.vcxproj -> D:\vs2013\代码\函数\test12.12\Debug\test12.12.exe
+1>FinalizeBuildStatus:
+1>  正在删除文件“Debug\test12.12.tlog\unsuccessfulbuild”。
+1>  正在对“Debug\test12.12.tlog\test12.12.lastbuildstate”执行 Touch 任务。
+1>
+1>生成成功。
+1>
+1>已用时间 00:00:01.34
+========== 生成:  成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========
