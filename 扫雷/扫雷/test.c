@@ -23,14 +23,21 @@ void game()
 	InitBoard(mine, ROWS, COLS, '0');
 	InitBoard(show, ROWS, COLS, '*');
 	//¥Ú”°∆Â≈Ã
-	DisplayBoard(mine, ROW, COL);
+	//DisplayBoard(mine, ROW, COL);
 	DisplayBoard(show, ROW, COL);
+	//≤º÷√¿◊
+	SetMine(mine, ROW, COL);
+	//DisplayBoard(mine, ROW, COL);
+	//…®¿◊
+	FindMind(mine, show, ROW, COL);
+
 
 }
 
 void tset()
 {
 	int input = 0;
+	srand((unsigned int)time(NULL));
 	do
 	{
 		mune();
