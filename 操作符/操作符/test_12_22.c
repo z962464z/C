@@ -101,24 +101,82 @@
 
 
 //统计num的补码中有几个1
+//int main()
+//{
+//	int num = 0;
+//	int count = 0;
+//	scanf("%d", &num);
+//	//while (num)
+//	//{
+//	//	if (num % 2 == 1)
+//	//		count++;
+//	//	num = num / 2;
+//	//}
+//
+//	int i = 0;
+//	for (i = 0; i < 32; i++)
+//	{
+//		if (1 == ((num >> i) & 1))
+//			count++;
+//	}
+//	printf("%d\n", count);
+//	return 0;
+//}
+
+//void test1(int arr[])
+//{
+//	printf("%d\n",sizeof(arr));
+//}
+//
+//void test2(char ch[])
+//{
+//	printf("%d\n",sizeof(ch));
+//}
+//
+//int main()
+//{
+//	int arr[10] = { 0 };
+//	char ch[10] = { 0 };
+//	printf("%d\n", sizeof(arr));
+//	printf("%d\n", sizeof(ch));
+//	test1(arr);
+//	test2(ch);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	int i = 0, a = 1, b = 2, c = 3, d = 4;
+//	//i = a++ && ++b && d++;
+//	i = a++ || ++b || d++;
+//	printf("a=%d\n b=%d\n c=%d\n d=%d\n", a, b, c, d);
+//	return 0;
+//}
+
+
+struct Stu
+{
+	char name[20];
+	int age;
+	char id[20];
+};
 int main()
 {
-	int num = 0;
-	int count = 0;
-	scanf("%d", &num);
-	//while (num)
-	//{
-	//	if (num % 2 == 1)
-	//		count++;
-	//	num = num / 2;
-	//}
+	//使用struct Stu这个类型创建了一个学生对象s1，并初始化
+	struct Stu s1 = { "张三", 20, "20200204193" };
+	struct Stu*ps = &s1;
+	printf("%s\n", ps->name);
+	printf("%d\n", ps->age);
+	printf("%s\n", ps->id);
+	//结构体指针->成员名
 
-	int i = 0;
-	for (i = 0; i < 32; i++)
-	{
-		if (1 == ((num >> i) & 1))
-			count++;
-	}
-	printf("%d\n", count);
+	/*printf("%s\n", (*ps).name);
+	printf("%d\n", (*ps).age);*/
+
+	/*printf("%s\n", s1.name);
+	printf("%d\n", s1.age);
+	printf("%s\n", s1.id);*/
+	//结构体变量.成员名
 	return 0;
 }
