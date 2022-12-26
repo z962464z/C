@@ -155,28 +155,62 @@
 //}
 
 
-struct Stu
-{
-	char name[20];
-	int age;
-	char id[20];
-};
+//struct Stu
+//{
+//	char name[20];
+//	int age;
+//	char id[20];
+//};
+//int main()
+//{
+//	//使用struct Stu这个类型创建了一个学生对象s1，并初始化
+//	struct Stu s1 = { "张三", 20, "20200204193" };
+//	struct Stu*ps = &s1;
+//	printf("%s\n", ps->name);
+//	printf("%d\n", ps->age);
+//	printf("%s\n", ps->id);
+//	//结构体指针->成员名
+//
+//	/*printf("%s\n", (*ps).name);
+//	printf("%d\n", (*ps).age);*/
+//
+//	/*printf("%s\n", s1.name);
+//	printf("%d\n", s1.age);
+//	printf("%s\n", s1.id);*/
+//	//结构体变量.成员名
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char a = 3;
+//	//000000000000000000000001
+//	//00000001
+//
+//	char b = 127;
+//	//000000000000000001111111
+//	//0111111
+//
+//	//a和b如何相加
+//	//000000000000000000000001
+//	//000000000000000001111111
+//	//000000000000000010000010
+//
+//	char c = a + b;
+//	//10000010
+//	//111111111111111100000010 - 补码
+//	//111111111111111100000011 - 反码
+//	//100000000000000011111110 - 原码
+//	// -126
+//	printf("%d\n", c);
+//	return 0;
+//}
+
+
+
 int main()
 {
-	//使用struct Stu这个类型创建了一个学生对象s1，并初始化
-	struct Stu s1 = { "张三", 20, "20200204193" };
-	struct Stu*ps = &s1;
-	printf("%s\n", ps->name);
-	printf("%d\n", ps->age);
-	printf("%s\n", ps->id);
-	//结构体指针->成员名
 
-	/*printf("%s\n", (*ps).name);
-	printf("%d\n", (*ps).age);*/
-
-	/*printf("%s\n", s1.name);
-	printf("%d\n", s1.age);
-	printf("%s\n", s1.id);*/
-	//结构体变量.成员名
 	return 0;
 }
