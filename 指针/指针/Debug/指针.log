@@ -1,7 +1,7 @@
-﻿生成启动时间为 2023/1/5 21:23:11。
+﻿生成启动时间为 2023/1/11 21:28:33。
      1>项目“D:\git\上传代码\C\指针\指针\指针.vcxproj”在节点 2 上(Build 个目标)。
      1>InitializeBuildStatus:
-         正在创建“Debug\指针.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+         正在对“Debug\指针.tlog\unsuccessfulbuild”执行 Touch 任务。
        ClCompile:
          D:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt "指针.c"
          指针.c
@@ -15,4 +15,4 @@
 
 生成成功。
 
-已用时间 00:00:00.32
+已用时间 00:00:00.34
