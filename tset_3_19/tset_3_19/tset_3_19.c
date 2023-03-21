@@ -113,3 +113,70 @@
 //	print(arr, sz);
 //	return 0;
 //}
+
+
+
+//void print_t(int n)
+//{
+//	int i = 0;
+//	for (i = 1; i <= n; i++)
+//	{
+//		int j = 0;
+//		for (j = 1; j <= i;j++)
+//		{
+//			printf("%d*%d=%-3d ", i, j, i*j);
+//		}
+//		printf("\n");
+//	}
+//}
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	print_t(n);
+//	return;
+//}
+
+
+
+int my_strlen(char len[])
+{
+	int count = 0;
+	while (*len != '\0')
+	{
+		count++;
+		len++;
+	}
+	return count;
+}
+//void r_string(char arr[])
+//{
+//	int l = 0;
+//	int r = my_strlen(arr) - 1;
+//
+//	while (l < r)
+//	{
+//		int tmp = arr[l];
+//		arr[l] = arr[r];
+//		arr[r] = tmp;
+//		l++;
+//		r--;
+//	}
+//}
+void r_string(char* arr)
+{
+	char tmp = arr[0];
+	int len = my_strlen(arr);
+	arr[0] = arr[len - 1];
+	arr[len - 1] = '\0';
+	if (my_strlen(arr + 1) >= 2)
+		r_string(arr + 1);
+	arr[len - 1] = tmp;
+}
+int main()
+{
+	char arr[] = "abcdef";
+	r_string(arr);
+	printf("%s\n", arr);
+	return 0;
+}
