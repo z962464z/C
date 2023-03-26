@@ -139,44 +139,89 @@
 
 
 
-int my_strlen(char len[])
-{
-	int count = 0;
-	while (*len != '\0')
-	{
-		count++;
-		len++;
-	}
-	return count;
-}
-//void r_string(char arr[])
+//int my_strlen(char len[])
 //{
-//	int l = 0;
-//	int r = my_strlen(arr) - 1;
-//
-//	while (l < r)
+//	int count = 0;
+//	while (*len != '\0')
 //	{
-//		int tmp = arr[l];
-//		arr[l] = arr[r];
-//		arr[r] = tmp;
-//		l++;
-//		r--;
+//		count++;
+//		len++;
+//	}
+//	return count;
+//}
+////void r_string(char arr[])
+////{
+////	int l = 0;
+////	int r = my_strlen(arr) - 1;
+////
+////	while (l < r)
+////	{
+////		int tmp = arr[l];
+////		arr[l] = arr[r];
+////		arr[r] = tmp;
+////		l++;
+////		r--;
+////	}
+////}
+//void r_string(char* arr)
+//{
+//	char tmp = arr[0];
+//	int len = my_strlen(arr);
+//	arr[0] = arr[len - 1];
+//	arr[len - 1] = '\0';
+//	if (my_strlen(arr + 1) >= 2)
+//		r_string(arr + 1);
+//	arr[len - 1] = tmp;
+//}
+//int main()
+//{
+//	char arr[] = "abcdef";
+//	r_string(arr);
+//	printf("%s\n", arr);
+//	return 0;
+//}
+
+
+
+
+//int Dig(unsigned int num)
+//{
+//	if (num > 9)
+//	{
+//		return Dig(num / 10) + num % 10;
+//	}
+//	else
+//	{
+//		return num;
 //	}
 //}
-void r_string(char* arr)
+//int main()
+//{
+//	unsigned int num = 0;
+//	scanf("%d", &num);
+//	int ret = Dig(num);
+//	printf("%d\n", ret);
+//	return 0;
+//}
+
+
+
+double Pow(int n, int k)
 {
-	char tmp = arr[0];
-	int len = my_strlen(arr);
-	arr[0] = arr[len - 1];
-	arr[len - 1] = '\0';
-	if (my_strlen(arr + 1) >= 2)
-		r_string(arr + 1);
-	arr[len - 1] = tmp;
+	//n^k=n*(n^k-1)
+	if (k < 0)
+		return (1.0 / (Pow(n,-k)));
+	else if (k == 0)
+		return 1;
+	else 
+		return n*Pow(n, k - 1);
 }
 int main()
 {
-	char arr[] = "abcdef";
-	r_string(arr);
-	printf("%s\n", arr);
+	int n = 0;
+	int k = 0;
+	scanf("%d%d", &n, &k);
+	double ret = Pow(n, k);
+	printf("ret=%lf", ret);
 	return 0;
 }
